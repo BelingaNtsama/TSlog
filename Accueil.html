@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSLog</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Accueil.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!--Partie pour mobile-->
+
+        <div id="nav_mobile">
+            <i id="menu_mobile" title="menu" class='bx bx-menu bx-flashing'></i>
+
+            <p><a id="logo_mobile" href="Accueil.html">TS<sub>Log</sub></a></p>
+
+        </div>
+
+        <div id="corps_mobile">
+            <h1>Profitez du contribuable Camerounais</h1>
+
+            <div id="lien">
+                <a href="#">Espace Utilisateur</a>
+                <a href="#">Espace Administrateur</a>
+            </div>
+
+            <i class='bx bx-help-circle bx-tada' id="aide_mobile" title="Besoin d'aide ?"></i>
+
+
+        </div>
+
+        <div id="boite_modale_mobile">
+            <i class='bx bx-x bx-tada' id="fermeture"></i>
+            <h1>Salut ! En quoi pouvons nous vous aider ?</h1>
+            <form>
+                <textarea title="Ecrivez ce dont vous avez envie de connaitre">Envoyez votre message </textarea>
+                <a href="mailto:raymond2belinga@gmail.com"><i class='bx bx-send bx-tada'></i></a>
+            </form>
+        </div>
+        <!--Partie pour ordi-->
+
+        <nav>
+
+            <i class='bx bx-help-circle bx-tada' id="Aide" title="Besoin d'aide ?"></i>
+
+
+            <p id="menu">Menu<i class='bx bx-menu bx-flashing'></i></p>
+
+            <p><a id="logo" href="Accueil.html">TS<sub>Log</sub></a></p>
+
+        </nav>
+
+        <div id="Corps">
+
+
+            <div id="Description">
+
+                <div id="Contener_haut">
+                    <div id="Ligne_haute"></div>
+                </div>
+
+                <h1>Une offre exclusive venant du Gouvernement Camerounais.</h1>
+                <h2>Beneficiez des efforts du contribuable en un clic.</h2>
+                <p>Vous cherchez comment reserver une chambre dans l'une des universites d'Etat en tant qu'etudiant ???
+                </p>
+                <p>Vous etes au bon endroit, appuyez sur le bouton s'inscrire pour celui n'ayant pas encore de compte.
+                </p>
+
+                <div id="Contener_bas">
+                    <div id="Ligne_basse"></div>
+                </div>
+
+                <div id="wrapper">
+                    <p>Location</p>
+                    <p>Colocation</p>
+                </div>
+                <h3>Bienvenu sur <span>TS</span><sub>Log</sub></h3>
+            </div>
+
+            <div id="Contener_utilisateur">
+                <a href="#">S'inscrire</a>
+                <a href="#">Espace Administrateur</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="boite_modale">
+
+        <h1>Salut ! En quoi pouvons nous vous aider ?</h1>
+        <form>
+            <textarea title="Ecrivez ce dont vous avez envie de connaitre">Envoyez votre message </textarea>
+            <a href="mailto:raymond2belinga@gmail.com"><i class='bx bx-send bx-tada'></i></a>
+        </form>
+    </div>
+
+
+    <div id="menu_modal">
+        <i class='bx bx-x bx-tada' id="fermeture_menu_mobile"></i>
+        <ul>
+            <li>
+                Je suis Utilisateur
+                <ul>
+                    <li><a href="#">S'inscrire</a></li>
+                    <li><a href="#">Se connecter</a></li>
+                </ul>
+            </li>
+            <li>
+                Je suis Administrateur
+                <ul>
+                    <li><a href="#">Se connecter</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </div>
+
+
+</body>
+
+<script>
+
+    $("#boite_modale").hide();
+    $("#Aide").click(function () {
+        $("#boite_modale").toggle(300);
+    });
+
+
+    /*Script pour mobile*/
+    $("#boite_modale_mobile").hide();
+
+    $("#aide_mobile").click(function () {
+        $("#boite_modale_mobile").show(300);
+        $("#aide_mobile").hide();
+        $("#menu_mobile").hide();
+        $('#corps_mobile').addClass('body');
+    });
+
+    $("#fermeture").click(function () {
+        $("#boite_modale_mobile").hide(300);
+        $("#aide_mobile").show();
+        $("#menu_mobile").show();
+        $('#corps_mobile').removeClass('body');
+    });
+
+
+$('#menu_modal').hide();
+
+$("#menu_mobile").click(function(){ 
+    $('#menu_modal').show(300);
+    $('#corps_mobile').addClass('body');
+})
+    $("#fermeture_menu_mobile").click(function () {
+        $("#menu_modal").hide(300);
+        $('#corps_mobile').removeClass('body');
+    })
+
+
+
+</script>
+
+</html>
