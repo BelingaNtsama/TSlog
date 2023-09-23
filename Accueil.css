@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.body{
+    filter: contrast(40%);
+}
+
+#nav_mobile,
+#corps_mobile,
+#aide_mobile,
+#boite_modale_mobile,
+#menu_modal {
+    display: none;
+}
+
+nav {
+    height: 8vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5vw;
+}
+
+nav #logo {
+    font-size: 30px;
+    position: relative;
+    right: 90vw;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #c2e59c;
+}
+
+nav #menu {
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 25px;
+    border: 0.3px solid rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#Aide {
+    font-size: 35px;
+    border: 0.3px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
+
+span {
+    color: #c2e59c;
+}
+
+sub {
+    color: #64b3f4;
+}
+
+#Corps {
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    height: 93vh;
+    display: flex;
+    z-index: 1;
+}
+
+#Description {
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10vw;
+    height: 85vh;
+    position: relative;
+    top: 5vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Contener_haut,
+#Contener_bas {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Ligne_haute {
+    border-color: white;
+    border-style: solid;
+    border-width: 0.2vh;
+    width: 50%;
+}
+
+#Description h1,
+h2,
+p {
+    color: white;
+    text-align: center;
+}
+
+#Description h1 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#Description h2 {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#Description p {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Description h3 {
+    color: white;
+    text-align: center;
+}
+
+
+#Ligne_basse {
+    border-color: white;
+    border-style: solid;
+    border-width: 0.2vh;
+    width: 30%;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 7%;
+    gap: 60%;
+    position: relative;
+}
+
+#Contener_utilisateur {
+    width: 40vw;
+    margin-left: 10vw;
+    height: 80vh;
+    position: relative;
+    top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 2vh;
+}
+
+#Contener_utilisateur a {
+    text-decoration: none;
+    color: white;
+    transform: scale(1);
+    transition: all .3s ease-in;
+    display: flex;
+    background: linear-gradient(to right, #c2e59c, rgba(0, 0, 0, 0.342));
+    width: 18vw;
+    height: 8vh;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#Contener_utilisateur a:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 2px 2px 2px #c2e59c;
+    background: linear-gradient(to right, #c2e59c, rgba(0, 0, 0, 0.705));
+}
+
+#boite_modale {
+    z-index: 1000;
+    position: absolute;
+    width: 25vw;
+    height: 60vh;
+    border: 0.5px groove #c2e59c;
+    background: linear-gradient(to right, #c2e59c, rgba(0, 0, 0, 0.705));
+    top: 10vh;
+    right: 12vw;
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.233);
+}
+
+#boite_modale h1 {
+    text-align: center;
+    color: white;
+}
+
+textarea {
+    height: 10vh;
+    width: 20vw;
+    font-size: 18px;
+    border-radius: 2vh;
+}
+
+#boite_modale a {
+    position: relative;
+    right: 3vw;
+    font-size: 30px;
+    display: inline-block;
+    color: #64b3f4;
+}
+
+textarea:hover,
+textarea:focus {
+    color: #64b3f4;
+    border: none #c2e59c;
+    outline: none #c2e59c;
+}
+
+@media(max-width:425px) {
+
+    nav,
+    #Corps,
+    #Description,
+    #Contener_utilisateur a {
+        display: none;
+    }
+
+    #nav_mobile {
+        display: block;
+        height: 8vh;
+        position: relative;
+        z-index: 1;
+    }
+
+    #menu_mobile {
+        color: black;
+        position: absolute;
+        right: 10px;
+        font-size: 25px;
+        border: 0.3px solid rgba(0, 0, 0, 0.747);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #logo_mobile {
+        color: black;
+        position: absolute;
+        left: 0;
+        top: 5px;
+        text-decoration: none;
+        color: #c2e59c;
+        font-size: 30px;
+    }
+
+    #corps_mobile {
+        background: linear-gradient(to right, #c2e59c, #64b3f4);
+        height: 93vh;
+        display: flex;
+        z-index: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    #corps_mobile h1 {
+        color: white;
+        border: 0.3px solid rgba(0, 0, 0, 0.493);
+        height: 20vh;
+        position: absolute;
+        top: -3.7vh;
+        background-color: rgba(0, 0, 0, 0.548);
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    #corps_mobile #lien {
+        position: absolute;
+        top: 30vh;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+    }
+
+    #lien a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        font-size: 20px;
+        border: .3px groove rgba(0, 0, 0, 0.274);
+        width: 60%;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.705), #c2e59c);
+        transform: calc(1);
+        transition: all .3s ease;
+    }
+
+    #lien a:hover {
+        box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.295);
+        transform: calc(1.05);
+        font-size: 22px;
+    }
+
+    #aide_mobile {
+        display: inline-block;
+        color: black;
+        font-size: 60px;
+        position: absolute;
+        top: 70vh;
+        right: 5vw;
+    }
+
+    #boite_modale_mobile {
+        display: flex;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        position: absolute;
+        top: 5vh;
+        height: 90vh;
+        width: 80vw;
+        right: 10vw;
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.63);
+        filter: contrast(100%);
+    }
+
+    #boite_modale_mobile h1 {
+        text-align: center;
+        color: black;
+    }
+
+    #boite_modale_mobile #fermeture {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 39px;
+        height: 40px;
+        width: 40px;
+        border: .3px solid black;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #boite_modale_mobile textarea {
+        width: 60vw;
+        height: 40vh;
+
+    }
+
+    #boite_modale_mobile a {
+        font-size: 30px;
+        position: relative;
+        right: 10vw;
+        bottom: 0vh;
+    }
+
+    #menu_modal {
+        display: flex;
+        height: 102vh;
+        width: 80vw;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+        right: 0;
+        box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.63);
+    }
+
+    #menu_modal li {
+        list-style: none;
+        padding: 5vh;
+    }
+
+    #fermeture_menu_mobile{
+        font-size: 30px;
+        position: absolute;
+        right: 2vw;
+        border: .3px solid black;
+        border-radius: 50%;
+    }
+}
