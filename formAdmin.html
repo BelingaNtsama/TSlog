@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Document</title>
+    <style>
+        .btn{
+            width: 100% !important;
+            position: relative !important;
+        }
+        .toggle-btn{
+            position: absolute;
+            left: 50px;
+            border-radius: 20px;
+            background: linear-gradient(to right, #c2e59c, #64b3f4);;
+            font-size: 18px;
+        }
+        .toggle-btn:hover{
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="from-box">
+            <div class="button-box">
+                <div id="btn" class="btn"></div>
+                <button type="button" class="toggle-btn">Admin</button>
+            </div>
+            <form action="" id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Enter your Id" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms &  condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+     </div>
+</body>
+</html>
