@@ -14,15 +14,16 @@
             position: absolute;
             left: 50px;
             border-radius: 20px;
-            background: linear-gradient(to right, #c2e59c, #64b3f4);
+            background: linear-gradient(to right, #c2e59c, #64b3f4);;
             font-size: 18px;
         }
         .toggle-btn:hover{
             cursor: default;
         }
+
         #login{
-        top: 150px;
-    }
+            top: 150px;
+        }
     </style>
 </head>
 <body>
@@ -33,18 +34,16 @@
                 <button type="button" class="toggle-btn">Administrateur</button>
             </div>
             <form action="" id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="Name" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="text" class="input-field" placeholder="Enter your Id" required>
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log In</button>
+                <input type="text" class="input-field" placeholder="Nom" required>
+                <input type="password" class="input-field" placeholder="Mot de passe" required>
+                <input type="number" class="input-field" placeholder="identifiant" required>
+                <button type="submit" class="submit-btn">Se connecter</button>
             </form>
             <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="Name" required>
+                <input type="text" class="input-field" placeholder="Nom" required>
                 <input type="email" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the terms &  condition</span>
-                <button type="submit" class="submit-btn">Register</button>
+                <input type="password" class="input-field" placeholder="Mot de passe" required>
+                <button type="submit" class="submit-btn">S'inscrire</button>
             </form>
         </div>
      </div>
