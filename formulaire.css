@@ -100,3 +100,18 @@ span{
 #register{
     left: 450px;
 }
+
+@media(max-width:380px){
+    .from-box{
+        width: 310px;
+        height: 400px;
+    }
+    .submit-btn{
+        position: relative;
+        right: 25px;
+    }
+
+    #register{
+        top: 150px;
+    }
+}
