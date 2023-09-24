@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
 .hero{
     height: 100%;
     width: 100%;
@@ -30,8 +34,7 @@
     position: relative;
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
-     display: flex;
-}
+    display: flex;
 }
 
 .toggle-btn{
@@ -65,6 +68,7 @@
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
+    margin: 20px 0;
     border-left: 0;
     border-top: 0;
     border-right: 0;
@@ -83,24 +87,17 @@
     border: 0;
     outline: none;
     border-radius: 30px;
+    position: relative;
+    top: 40px;
 }
 
-.check-box{
-    margin: 30px 10px 30px 0; 
-}
-
-span{
-    color: #777;
-    font-size: 12px;
-    bottom: 64px;
-    position: absolute;
-}
 
 #login{
     left: 50px;
 }
 #register{
     left: 450px;
+    top: 100px;
 }
 
 @media(max-width:380px){
@@ -113,7 +110,4 @@ span{
         right: 25px;
     }
 
-    #register{
-        top: 150px;
-    }
 }
