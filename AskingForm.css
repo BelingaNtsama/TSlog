@@ -1,0 +1,134 @@
+body{
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+fieldset{
+    height: 500px;
+    width: 85%;
+    margin-top: 100px;
+    position: absolute;
+    border-radius: 20px;
+    margin-left: 80px;
+}
+
+h2{
+    font-size: 43px;
+    margin-top: 0;
+}
+
+.form1{
+    position: absolute;
+    left: 20px;
+    top: 18%;
+    display: block;
+    width: 35%;
+}
+
+.form1 input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 7px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+.form2{
+    position: absolute;
+    right: 100px;
+    left: 60%;
+}
+
+.form2 input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 7px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+select{
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.photo{
+    position: absolute;
+    height: 150px;
+    width: 13%;
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    background-image: url(luffy.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 2px;
+    border-radius: 500px;
+    left: 300px;
+    padding: 20px;
+    left: 490px;
+}
+
+.btn{
+    position: absolute;
+    right: 2%;
+    top: 90%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+    border: none;
+    height: 30px;
+    width: 80px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn :hover{
+    transform: scale(1.1s);
+}
+
+@media screen  and (max-width: 768px) {
+
+    fieldset{
+        margin-left: 0;
+        margin-right: 0;
+        width: 95%;
+        height: 100%;
+        padding-bottom: 0;
+        border: none;
+    }
+    .form1{
+        position: absolute;
+        width: 70%;
+    }
+
+    .form2{
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+
+    }
+
+    .btn{
+        position: absolute;
+        top: 60px;
+        
+    }
+
+    .photo{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        border-radius: 100px;
+        width: 5%;
+    }
+
+    h2{
+        font-size: 30px;
+        
+    }
+}
