@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+.photo{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
+.photo1{
+    position: absolute;
+    width: 12%;
+    height: 100%;
+    background-color: #64b3f4;
+    background-size: cover;
+    background-image: url(luffy.jpg);
+    left: 600px;
+    border-radius: 50%;
+    right: 20px;
+    top: 1px;
+}
+.info{
+    margin-top: 2px;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: green;
+    display: inline-block;
+}
+ .info1{
+    margin-top: 5px;
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    background-color: yellow;
+    left: 0;
+}
+.info2{
+    margin-top: 5px;
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    background-color: gray;
+    right: 0;
+}
+
+.Notification{
+    width: 100%;
+    height: 150px;
+    background-color:black;
+    margin-bottom: 10px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: purple;
+}
+
+.contact{
+    margin-top: 5px;
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    background-color: gray;
+    right: 0;
+}
+.date{
+    margin-top: 5px;
+    position: absolute;
+    width: 45%;
+    height: 90%;
+    background-color: yellow;
+    left: 0;
+}
